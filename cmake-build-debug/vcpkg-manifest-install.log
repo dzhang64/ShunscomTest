@@ -1,0 +1,10 @@
+Detecting compiler hash for triplet x64-windows...
+Compiler found: E:/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe
+All requested packages are currently installed.
+Total install time: 300 ns
+libusb can be imported via CMake FindPkgConfig module:
+    find_package(PkgConfig REQUIRED)
+    pkg_check_modules(libusb REQUIRED IMPORTED_TARGET libusb-1.0)
+
+    target_link_libraries(main PRIVATE PkgConfig::libusb)
+

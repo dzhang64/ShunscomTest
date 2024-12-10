@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QualcommDiagCommandContent>
+    <Command>
+        <Value>115</Value>
+        <DescriptionEn>Configure log settings</DescriptionEn>
+        <DescriptionZh>配置日志设置</DescriptionZh>
+        <Operations>
+            <Operation>
+                <Value>0</Value>
+                <Hex>\x00 \x00 \x00 \x00 \x00 \x00 \x00</Hex>
+                <Description>Disable logging service</Description>
+            </Operation>
+            <Operation>
+                <Value>1</Value>
+                <Hex>\x00 \x00 \x00 \x01 \x00 \x00 \x00</Hex>
+                <Description>Retrieve ID ranges</Description>
+            </Operation>
+            <Operation>
+                <Value>2</Value>
+                <Hex>\x00 \x00 \x00 \x02 \x00 \x00 \x00</Hex>
+                <Description>Reserved</Description>
+            </Operation>
+            <Operation>
+                <Value>3</Value>
+                <Hex>\x00 \x00 \x00 \x03 \x00 \x00 \x00</Hex>
+                <Description>Set log mask</Description>
+            </Operation>
+            <Operation>
+                <Value>4</Value>
+                <Hex>\x00 \x00 \x00 \x04 \x00 \x00 \x00</Hex>
+                <Description>Get log mask</Description>
+            </Operation>
+        </Operations>
+    </Command>
+    <Command>
+        <Value>125</Value>
+        <DescriptionEn>Configure log settings</DescriptionEn>
+        <DescriptionZh>配置日志设置</DescriptionZh>
+        <Operations>
+            <Operation>
+                <Value>1</Value>
+                <Hex>\x01 \x00 \x00 \x00 \x00 \x00 \x00</Hex>
+                <Description>Get subsystem ID ranges</Description>
+            </Operation>
+            <Operation>
+                <Value>2</Value>
+                <Hex>\x02 \x00 \x00 \x0 0\x00 \x00 \x00</Hex>
+                <Description>Get subsystem build mask</Description>
+            </Operation>
+            <Operation>
+                <Value>3</Value>
+                <Hex>\x03 \x00 \x00 \x00 \x00 \x00 \x00</Hex>
+                <Description>Get subsystem runtime mask</Description>
+            </Operation>
+            <Operation>
+                <Value>4</Value>
+                <Hex>\x04 \x00 \x00 \x00 \x00 \x00 \x00</Hex>
+                <Description>Set subsystem runtime mask</Description>
+            </Operation>
+            <Operation>
+                <Value>5</Value>
+                <Hex>\x05 \x00 \x00 \x00 \x00 \x00 \x00</Hex>
+                <Description>Set all subsystem runtime masks</Description>
+            </Operation>
+        </Operations>
+    </Command>
+</QualcommDiagCommandContent>
+
+
+

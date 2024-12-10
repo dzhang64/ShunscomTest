@@ -1,0 +1,2 @@
+2024-11-28 21:21:58.926 - 串口读取失败: 0
+2024-11-28 21:21:58.927 - 读取高通LOG失败: vector::_M_range_check: __n (which is 0) >= this->size() (which is 0)

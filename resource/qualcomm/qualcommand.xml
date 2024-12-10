@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QualcommCommand>
+        <Command>
+            <Name>DIAG_VERNO_F</Name>
+            <Value>0</Value>
+            <DescriptionEn>Query the diagnostic version number</DescriptionEn>
+            <DescriptionZh>查询诊断版本号</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_ESN_F</Name>
+            <Value>1</Value>
+            <DescriptionEn>Retrieve the Electronic Serial Number (ESN)</DescriptionEn>
+            <DescriptionZh>检索电子序列号（ESN）</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_PEEKB_F</Name>
+            <Value>2</Value>
+            <DescriptionEn>Peek a byte from memory</DescriptionEn>
+            <DescriptionZh>从内存中读取一个字节</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_PEEKW_F</Name>
+            <Value>3</Value>
+            <DescriptionEn>Peek a word from memory</DescriptionEn>
+            <DescriptionZh>从内存中读取一个字</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_PEEKD_F</Name>
+            <Value>4</Value>
+            <DescriptionEn>Peek a double word from memory</DescriptionEn>
+            <DescriptionZh>从内存中读取一个双字</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_POKEB_F</Name>
+            <Value>5</Value>
+            <DescriptionEn>Poke a byte into memory</DescriptionEn>
+            <DescriptionZh>将一个字节写入内存</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_POKEW_F</Name>
+            <Value>6</Value>
+            <DescriptionEn>Poke a word into memory</DescriptionEn>
+            <DescriptionZh>将一个字写入内存</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_POKED_F</Name>
+            <Value>7</Value>
+            <DescriptionEn>Poke a double word into memory</DescriptionEn>
+            <DescriptionZh>将一个双字写入内存</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_OUTP_F</Name>
+            <Value>8</Value>
+            <DescriptionEn>Output a byte to a port</DescriptionEn>
+            <DescriptionZh>向端口输出一个字节</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_OUTPW_F</Name>
+            <Value>9</Value>
+            <DescriptionEn>Output a word to a port</DescriptionEn>
+            <DescriptionZh>向端口输出一个字</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_INP_F</Name>
+            <Value>10</Value>
+            <DescriptionEn>Input a byte from a port</DescriptionEn>
+            <DescriptionZh>从端口输入一个字节</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_INPW_F</Name>
+            <Value>11</Value>
+            <DescriptionEn>Input a word from a port</DescriptionEn>
+            <DescriptionZh>从端口输入一个字</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_STATUS_F</Name>
+            <Value>12</Value>
+            <DescriptionEn>Query the status of the device</DescriptionEn>
+            <DescriptionZh>查询设备状态</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_LOGMASK_F</Name>
+            <Value>15</Value>
+            <DescriptionEn>Set or get log masks</DescriptionEn>
+            <DescriptionZh>设置或获取日志掩码</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_LOG_F</Name>
+            <Value>16</Value>
+            <DescriptionEn>Send diagnostic log data</DescriptionEn>
+            <DescriptionZh>发送诊断日志数据</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_NV_PEEK_F</Name>
+            <Value>17</Value>
+            <DescriptionEn>Peek NV memory</DescriptionEn>
+            <DescriptionZh>读取 NV 内存</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_NV_POKE_F</Name>
+            <Value>18</Value>
+            <DescriptionEn>Poke NV memory</DescriptionEn>
+            <DescriptionZh>写入 NV 内存</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_BAD_CMD_F</Name>
+            <Value>19</Value>
+            <DescriptionEn>Indicates an invalid command was received</DescriptionEn>
+            <DescriptionZh>指示接收到无效命令</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_BAD_PARM_F</Name>
+            <Value>20</Value>
+            <DescriptionEn>Indicates invalid parameters were received</DescriptionEn>
+            <DescriptionZh>指示接收到无效参数</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_BAD_LEN_F</Name>
+            <Value>21</Value>
+            <DescriptionEn>Indicates the message length was invalid</DescriptionEn>
+            <DescriptionZh>指示消息长度无效</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_BAD_MODE_F</Name>
+            <Value>24</Value>
+            <DescriptionEn>Indicates the command is unsupported in the current mode</DescriptionEn>
+            <DescriptionZh>指示当前模式下不支持的命令</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_TAGRAPH_F</Name>
+            <Value>25</Value>
+            <DescriptionEn>Retrieve Tagraph data</DescriptionEn>
+            <DescriptionZh>检索 Tagraph 数据</DescriptionZh>
+        </Command>
+		<Command>
+            <Name>DIAG_MARKOV_F</Name>
+            <Value>26</Value>
+            <DescriptionEn>Run Markov diagnostic test</DescriptionEn>
+            <DescriptionZh>运行马尔科夫诊断测试</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_MARKOV_RESET_F</Name>
+            <Value>27</Value>
+            <DescriptionEn>Reset Markov diagnostic test</DescriptionEn>
+            <DescriptionZh>重置马尔科夫诊断测试</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_DIAG_VER_F</Name>
+            <Value>28</Value>
+            <DescriptionEn>Query diagnostic version</DescriptionEn>
+            <DescriptionZh>查询诊断版本</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_TS_F</Name>
+            <Value>29</Value>
+            <DescriptionEn>Query timestamp</DescriptionEn>
+            <DescriptionZh>查询时间戳</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_TA_PARM_F</Name>
+            <Value>30</Value>
+            <DescriptionEn>Retrieve TA parameters</DescriptionEn>
+            <DescriptionZh>检索 TA 参数</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_MSG_F</Name>
+            <Value>31</Value>
+            <DescriptionEn>Send debug message</DescriptionEn>
+            <DescriptionZh>发送调试消息</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_HS_KEY_F</Name>
+            <Value>32</Value>
+            <DescriptionEn>Perform HS key operation</DescriptionEn>
+            <DescriptionZh>执行 HS 密钥操作</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_HS_LOCK_F</Name>
+            <Value>33</Value>
+            <DescriptionEn>Perform HS lock operation</DescriptionEn>
+            <DescriptionZh>执行 HS 锁定操作</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_HS_SCREEN_F</Name>
+            <Value>34</Value>
+            <DescriptionEn>Perform HS screen operation</DescriptionEn>
+            <DescriptionZh>执行 HS 屏幕操作</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_PARM_SET_F</Name>
+            <Value>36</Value>
+            <DescriptionEn>Set diagnostic parameters</DescriptionEn>
+            <DescriptionZh>设置诊断参数</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_NV_READ_F</Name>
+            <Value>38</Value>
+            <DescriptionEn>Read from NV memory</DescriptionEn>
+            <DescriptionZh>从 NV 内存中读取</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_NV_WRITE_F</Name>
+            <Value>39</Value>
+            <DescriptionEn>Write to NV memory</DescriptionEn>
+            <DescriptionZh>写入 NV 内存</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_CONTROL_F</Name>
+            <Value>41</Value>
+            <DescriptionEn>Perform diagnostic control operation</DescriptionEn>
+            <DescriptionZh>执行诊断控制操作</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_ERR_READ_F</Name>
+            <Value>42</Value>
+            <DescriptionEn>Read error logs</DescriptionEn>
+            <DescriptionZh>读取错误日志</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_ERR_CLEAR_F</Name>
+            <Value>43</Value>
+            <DescriptionEn>Clear error logs</DescriptionEn>
+            <DescriptionZh>清除错误日志</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_SER_RESET_F</Name>
+            <Value>44</Value>
+            <DescriptionEn>Reset serial connection</DescriptionEn>
+            <DescriptionZh>重置串口连接</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_SER_REPORT_F</Name>
+            <Value>45</Value>
+            <DescriptionEn>Generate serial report</DescriptionEn>
+            <DescriptionZh>生成串口报告</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_TEST_F</Name>
+            <Value>46</Value>
+            <DescriptionEn>Run diagnostic test</DescriptionEn>
+            <DescriptionZh>运行诊断测试</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_GET_DIPSW_F</Name>
+            <Value>47</Value>
+            <DescriptionEn>Retrieve DIP switch settings</DescriptionEn>
+            <DescriptionZh>检索 DIP 开关设置</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_SET_DIPSW_F</Name>
+            <Value>48</Value>
+            <DescriptionEn>Set DIP switch settings</DescriptionEn>
+            <DescriptionZh>设置 DIP 开关设置</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_VOC_PCM_LB_F</Name>
+            <Value>49</Value>
+            <DescriptionEn>Set PCM loopback for voice codec</DescriptionEn>
+            <DescriptionZh>为语音编解码器设置 PCM 回环</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_VOC_PKT_LB_F</Name>
+            <Value>50</Value>
+            <DescriptionEn>Set packet loopback for voice codec</DescriptionEn>
+            <DescriptionZh>为语音编解码器设置数据包回环</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_ORIG_F</Name>
+            <Value>53</Value>
+            <DescriptionEn>Initiate call origination</DescriptionEn>
+            <DescriptionZh>启动呼叫发起</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_END_F</Name>
+            <Value>54</Value>
+            <DescriptionEn>Terminate call</DescriptionEn>
+            <DescriptionZh>终止呼叫</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_SW_VERSION_F</Name>
+            <Value>56</Value>
+            <DescriptionEn>Query software version</DescriptionEn>
+            <DescriptionZh>查询软件版本</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_DLOAD_F</Name>
+            <Value>58</Value>
+            <DescriptionEn>Initiate download mode</DescriptionEn>
+            <DescriptionZh>启动下载模式</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_TMOB_F</Name>
+            <Value>59</Value>
+            <DescriptionEn>Control TMOB feature</DescriptionEn>
+            <DescriptionZh>控制 TMOB 功能</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_FTM_CMD_F</Name>
+            <Value>59</Value>
+            <DescriptionEn>Send factory test mode (FTM) command</DescriptionEn>
+            <DescriptionZh>发送工厂测试模式（FTM）命令</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_EXT_SW_VERSION_F</Name>
+            <Value>60</Value>
+            <DescriptionEn>Query extended software version</DescriptionEn>
+            <DescriptionZh>查询扩展软件版本</DescriptionZh>
+        </Command>
+		        <Command>
+            <Name>DIAG_TEST_STATE_F</Name>
+            <Value>61</Value>
+            <DescriptionEn>Query the current test state</DescriptionEn>
+            <DescriptionZh>查询当前测试状态</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_STATE_F</Name>
+            <Value>63</Value>
+            <DescriptionEn>Query the current diagnostic state</DescriptionEn>
+            <DescriptionZh>查询当前诊断状态</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_PILOT_SETS_F</Name>
+            <Value>64</Value>
+            <DescriptionEn>Retrieve pilot sets information</DescriptionEn>
+            <DescriptionZh>检索导频集信息</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_SPC_F</Name>
+            <Value>65</Value>
+            <DescriptionEn>Send the Service Programming Code (SPC)</DescriptionEn>
+            <DescriptionZh>发送服务编程码（SPC）</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_BAD_SPC_MODE_F</Name>
+            <Value>66</Value>
+            <DescriptionEn>Indicate invalid SPC mode</DescriptionEn>
+            <DescriptionZh>指示无效的 SPC 模式</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_PARM_GET2_F</Name>
+            <Value>67</Value>
+            <DescriptionEn>Retrieve advanced diagnostic parameters</DescriptionEn>
+            <DescriptionZh>检索高级诊断参数</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_SERIAL_CHG_F</Name>
+            <Value>68</Value>
+            <DescriptionEn>Change serial connection settings</DescriptionEn>
+            <DescriptionZh>更改串口连接设置</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_PASSWORD_F</Name>
+            <Value>70</Value>
+            <DescriptionEn>Send password for secure access</DescriptionEn>
+            <DescriptionZh>发送密码以进行安全访问</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_BAD_SEC_MODE_F</Name>
+            <Value>71</Value>
+            <DescriptionEn>Indicate invalid security mode</DescriptionEn>
+            <DescriptionZh>指示无效的安全模式</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_PR_LIST_WR_F</Name>
+            <Value>72</Value>
+            <DescriptionEn>Write preferred roaming list</DescriptionEn>
+            <DescriptionZh>写入首选漫游列表</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_PR_LIST_RD_F</Name>
+            <Value>73</Value>
+            <DescriptionEn>Read preferred roaming list</DescriptionEn>
+            <DescriptionZh>读取首选漫游列表</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_SUBSYS_CMD_F</Name>
+            <Value>75</Value>
+            <DescriptionEn>Send subsystem command</DescriptionEn>
+            <DescriptionZh>发送子系统命令</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_FEATURE_QUERY_F</Name>
+            <Value>81</Value>
+            <DescriptionEn>Query supported features</DescriptionEn>
+            <DescriptionZh>查询支持的功能</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_SMS_READ_F</Name>
+            <Value>83</Value>
+            <DescriptionEn>Read SMS messages</DescriptionEn>
+            <DescriptionZh>读取短信</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_SMS_WRITE_F</Name>
+            <Value>84</Value>
+            <DescriptionEn>Write SMS messages</DescriptionEn>
+            <DescriptionZh>写入短信</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_SUP_FER_F</Name>
+            <Value>85</Value>
+            <DescriptionEn>Retrieve frame error rate</DescriptionEn>
+            <DescriptionZh>检索帧误码率</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_SUP_WALSH_CODES_F</Name>
+            <Value>86</Value>
+            <DescriptionEn>Retrieve Walsh codes information</DescriptionEn>
+            <DescriptionZh>检索 Walsh 码信息</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_SET_MAX_SUP_CH_F</Name>
+            <Value>87</Value>
+            <DescriptionEn>Set maximum supported channels</DescriptionEn>
+            <DescriptionZh>设置最大支持的信道数</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_PARM_GET_IS95B_F</Name>
+            <Value>88</Value>
+            <DescriptionEn>Retrieve IS-95B parameters</DescriptionEn>
+            <DescriptionZh>检索 IS-95B 参数</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_FS_OP_F</Name>
+            <Value>89</Value>
+            <DescriptionEn>Perform file system operations</DescriptionEn>
+            <DescriptionZh>执行文件系统操作</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_AKEY_VERIFY_F</Name>
+            <Value>90</Value>
+            <DescriptionEn>Verify AKey</DescriptionEn>
+            <DescriptionZh>验证 AKey</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_BMP_HS_SCREEN_F</Name>
+            <Value>91</Value>
+            <DescriptionEn>Handle BMP high-speed screen commands</DescriptionEn>
+            <DescriptionZh>处理 BMP 高速屏幕命令</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_CONFIG_COMM_F</Name>
+            <Value>92</Value>
+            <DescriptionEn>Configure communication parameters</DescriptionEn>
+            <DescriptionZh>配置通信参数</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_EXT_LOGMASK_F</Name>
+            <Value>93</Value>
+            <DescriptionEn>Set or get extended log masks</DescriptionEn>
+            <DescriptionZh>设置或获取扩展日志掩码</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_EVENT_REPORT_F</Name>
+            <Value>96</Value>
+            <DescriptionEn>Send event report</DescriptionEn>
+            <DescriptionZh>发送事件报告</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_STREAMING_CONFIG_F</Name>
+            <Value>97</Value>
+            <DescriptionEn>Configure streaming settings</DescriptionEn>
+            <DescriptionZh>配置流媒体设置</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_PARM_RETRIEVE_F</Name>
+            <Value>98</Value>
+            <DescriptionEn>Retrieve diagnostic parameters</DescriptionEn>
+            <DescriptionZh>检索诊断参数</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_STATUS_SNAPSHOT_F</Name>
+            <Value>99</Value>
+            <DescriptionEn>Take a snapshot of current status</DescriptionEn>
+            <DescriptionZh>获取当前状态快照</DescriptionZh>
+        </Command>
+		<Command>
+            <Name>DIAG_RPC_F</Name>
+            <Value>100</Value>
+            <DescriptionEn>Perform remote procedure call (RPC)</DescriptionEn>
+            <DescriptionZh>执行远程过程调用（RPC）</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_GET_PROPERTY_F</Name>
+            <Value>101</Value>
+            <DescriptionEn>Retrieve a property</DescriptionEn>
+            <DescriptionZh>检索属性</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_PUT_PROPERTY_F</Name>
+            <Value>102</Value>
+            <DescriptionEn>Set a property</DescriptionEn>
+            <DescriptionZh>设置属性</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_GET_GUID_F</Name>
+            <Value>103</Value>
+            <DescriptionEn>Retrieve the GUID</DescriptionEn>
+            <DescriptionZh>检索 GUID</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_USER_CMD_F</Name>
+            <Value>104</Value>
+            <DescriptionEn>Send user-defined command</DescriptionEn>
+            <DescriptionZh>发送用户自定义命令</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_GET_PERM_PROPERTY_F</Name>
+            <Value>105</Value>
+            <DescriptionEn>Retrieve a permanent property</DescriptionEn>
+            <DescriptionZh>检索永久属性</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_PUT_PERM_PROPERTY_F</Name>
+            <Value>106</Value>
+            <DescriptionEn>Set a permanent property</DescriptionEn>
+            <DescriptionZh>设置永久属性</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_PERM_USER_CMD_F</Name>
+            <Value>107</Value>
+            <DescriptionEn>Send permanent user-defined command</DescriptionEn>
+            <DescriptionZh>发送永久用户自定义命令</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_GPS_SESS_CTRL_F</Name>
+            <Value>108</Value>
+            <DescriptionEn>Control GPS session</DescriptionEn>
+            <DescriptionZh>控制 GPS 会话</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_GPS_GRID_F</Name>
+            <Value>109</Value>
+            <DescriptionEn>Retrieve GPS grid information</DescriptionEn>
+            <DescriptionZh>检索 GPS 网格信息</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_GPS_STATISTICS_F</Name>
+            <Value>110</Value>
+            <DescriptionEn>Retrieve GPS statistics</DescriptionEn>
+            <DescriptionZh>检索 GPS 统计信息</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_ROUTE_F</Name>
+            <Value>111</Value>
+            <DescriptionEn>Retrieve routing information</DescriptionEn>
+            <DescriptionZh>检索路由信息</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_IS2000_STATUS_F</Name>
+            <Value>112</Value>
+            <DescriptionEn>Retrieve IS-2000 status</DescriptionEn>
+            <DescriptionZh>检索 IS-2000 状态</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_RLP_STAT_RESET_F</Name>
+            <Value>113</Value>
+            <DescriptionEn>Reset RLP statistics</DescriptionEn>
+            <DescriptionZh>重置 RLP 统计信息</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_TDSO_STAT_RESET_F</Name>
+            <Value>114</Value>
+            <DescriptionEn>Reset TDSO statistics</DescriptionEn>
+            <DescriptionZh>重置 TDSO 统计信息</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_LOG_CONFIG_F</Name>
+            <Value>115</Value>
+            <DescriptionEn>Configure log settings</DescriptionEn>
+            <DescriptionZh>配置日志设置</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_TRACE_EVENT_REPORT_F</Name>
+            <Value>116</Value>
+            <DescriptionEn>Send trace event report</DescriptionEn>
+            <DescriptionZh>发送跟踪事件报告</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_SBI_READ_F</Name>
+            <Value>117</Value>
+            <DescriptionEn>Read from SBI (System Bus Interface)</DescriptionEn>
+            <DescriptionZh>从 SBI（系统总线接口）读取</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_SBI_WRITE_F</Name>
+            <Value>118</Value>
+            <DescriptionEn>Write to SBI (System Bus Interface)</DescriptionEn>
+            <DescriptionZh>写入 SBI（系统总线接口）</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_SSD_VERIFY_F</Name>
+            <Value>119</Value>
+            <DescriptionEn>Verify SSD (Shared Secret Data)</DescriptionEn>
+            <DescriptionZh>验证 SSD（共享密钥数据）</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_LOG_ON_DEMAND_F</Name>
+            <Value>120</Value>
+            <DescriptionEn>Request a log on demand</DescriptionEn>
+            <DescriptionZh>按需请求日志</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_EXT_MSG_F</Name>
+            <Value>121</Value>
+            <DescriptionEn>Send extended diagnostic message</DescriptionEn>
+            <DescriptionZh>发送扩展诊断消息</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_ONCRPC_F</Name>
+            <Value>122</Value>
+            <DescriptionEn>Perform ONC RPC operation</DescriptionEn>
+            <DescriptionZh>执行 ONC RPC 操作</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_PROTOCOL_LOOPBACK_F</Name>
+            <Value>123</Value>
+            <DescriptionEn>Test protocol loopback</DescriptionEn>
+            <DescriptionZh>测试协议回环</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_EXT_BUILD_ID_F</Name>
+            <Value>124</Value>
+            <DescriptionEn>Retrieve extended build ID</DescriptionEn>
+            <DescriptionZh>检索扩展版本 ID</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_EXT_MSG_CONFIG_F</Name>
+            <Value>125</Value>
+            <DescriptionEn>Configure extended message settings</DescriptionEn>
+            <DescriptionZh>配置扩展消息设置</DescriptionZh>
+        </Command>
+        <Command>
+            <Name>DIAG_MAX_F</Name>
+            <Value>157</Value>
+            <DescriptionEn>Maximum supported diagnostic command value</DescriptionEn>
+            <DescriptionZh>支持的最大诊断命令值</DescriptionZh>
+        </Command>
+</QualcommCommand>
+
+
+

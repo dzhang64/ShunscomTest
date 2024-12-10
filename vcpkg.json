@@ -1,0 +1,9 @@
+{
+  "name" : "shunscomtest",
+  "version-string" : "1.0.0",
+  "builtin-baseline" : "813a241fb83adad503a391facaa6aa634631accc",
+  "dependencies" : [ {
+    "name" : "libusb",
+    "version>=" : "1.0.27#2"
+  } ]
+}

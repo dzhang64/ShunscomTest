@@ -1,0 +1,75 @@
+Package: vcpkg-cmake
+Version: 2024-04-23
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 4a432835fed7e798ca1587a21ecf930c05f8e0e8bfe5166dc964d862ad12c9d1
+Status: install ok installed
+
+Package: vcpkg-cmake-get-vars
+Version: 2024-09-22
+Depends: vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 07ed3be024b98e7008d324af407a1cd11c0976a6947438a3f73528d1b7251687
+Status: install ok installed
+
+Package: vcpkg-tool-meson
+Version: 1.6.0
+Depends: vcpkg-cmake-get-vars
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 749364e77cf5aa39670e6bee71291ff41f122735689eef66645308c94faec548
+Description: Meson build system
+Status: install ok installed
+
+Package: pkgconf
+Version: 2.3.0
+Depends: vcpkg-tool-meson
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 2b933329f173a2b6e4312d0c0b320b038e0a35d1583813399926156116054c85
+Description: pkgconf is a program which helps to configure compiler and linker flags for development libraries. It is similar to pkg-config from freedesktop.org.
+Status: install ok installed
+
+Package: vcpkg-pkgconfig-get-modules
+Version: 2024-04-03
+Depends: pkgconf
+Architecture: x64-windows
+Multi-Arch: same
+Abi: a6dec37a0f66547ed1b87ebcd7e942a161cbd5cef829faf1d01b04f8ec2a85a3
+Status: install ok installed
+
+Package: vcpkg-msbuild
+Version: 2023-08-08
+Depends: vcpkg-cmake-get-vars, vcpkg-pkgconfig-get-modules
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 61aa6688d8b81d8379a7d93c21e09f56bd43676f62bcfeab65d6b42ac65c131e
+Status: install ok installed
+
+Package: libusb
+Version: 1.0.27
+Port-Version: 2
+Depends: vcpkg-msbuild
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 9ef6c93f7a285b0edc5e92095aece1dc644ec5b4ba504776170a59ddb3f43978
+Description: a cross-platform library to access USB devices
+Status: install ok installed
+
+Package: vcpkg-cmake-config
+Version: 2024-05-23
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 03271f226303581b1d92c0ec0012f8fcedaae3909eeac080e104367bf8b210f0
+Status: purge ok not-installed
+
+Package: tinyxml2
+Version: 10.0.0
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: cc70a98e0f4697f5f68b3f8bd09c4f1d8c6df4da2a606990c8d8668db90b6a6b
+Description: A simple, small, efficient, C++ XML parser
+Status: purge ok not-installed
+
